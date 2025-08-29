@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.31)
 project(ffmpeg)
-include(flags OPTIONAL)
+include(xpflags)
 if(DEFINED FFMPEG_VER)
   set(ver _${FFMPEG_VER})
   set(verDir /${PROJECT_NAME}${ver})
